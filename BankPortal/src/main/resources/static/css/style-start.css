@@ -1,0 +1,30 @@
+#all {
+    width: 70%;
+    margin-left: 15%;
+}
+
+table, td, th {
+    border: 1px solid #ddd;
+    /*text-align: center;*/
+}
+.note{
+    margin-left: 33%;
+    width: 45%;
+    text-align: left;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.text{
+    color: #e60073;
+}
+
+label{
+    color: aliceblue;
+}

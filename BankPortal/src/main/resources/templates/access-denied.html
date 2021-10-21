@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org" >
+	  <!--layout:decorate="~{layouts/layout}"-->
+<!--
+Access Denied Page. Uses who have insufficient rights will be redirected to this page.
+The access denied page is located at src/main/resources/templates/error/access-denied.html
+ -->
+	  <th:block th:include="fragments/header"></th:block>
+
+<body>
+    <!-- /* Content of this page will be decorated by the elements of layout.html (layouts/layout) */ -->
+    <div class="container mt-3" layout:fragment="content">
+      <div class="d-flex align-items-center justify-content-center h-100">
+	      	<div class="d-flex flex-column">
+	        	<h1 class="text-danger align-self-center p-2">Access Denied</h1>
+	        	<h4 class="text-primary align-self-center p-2"><a href="/index" th:href="@{/index}">Back to home page</a></h4>
+	        
+	      	</div>
+	    </div>
+       
+    </div>
+</body>
+
+</html>

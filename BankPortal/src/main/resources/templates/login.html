@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BankIslamSMS</title>
+    <link rel="stylesheet" th:href="@{/css/style-start.css}">
+    <script type="text/javascript" th:src="@{/js/login.js}"></script>
+</head>
+<body style="background-color: #1a1a1a;">
+    <div id="all">
+        <img th:src="@{/img/top_bimb.gif}" width="100%">
+        <table>
+            <tr>
+                <th style="width: 24%"></th>
+                <th>
+                    <div style="text-align: center">
+                        <h2 class="text">Login</h2><br>
+                        <label id="ipError" style="color: red; display: none">Invalid login ID</label>
+                        <label>Login ID </label><input type="text" id="uname"><br><br>
+                        <label>Password </label><input type="password" id="pass"><br><br>
+                        <input type="button" value="Login" onclick="loginAction()">
+                    </div>
+                    <div class="note">
+                        <p class="text">Warning:</p>
+                        <p class="text">Use of this system is restricted to individuals and activities authorized by the<br>
+                        management of the Bank Islam. Unauthorized use may result in disciplinary<br>
+                        action and/or legal prosecution.</p>
+                    </div>
+                    <div style="height: 250px; column-span: 2; vertical-align: top"><!--DWLayoutEmptyCell-->&nbsp;</div>
+                </th>
+
+            </tr>
+        </table>
+        <p style="text-align: center">Bank Islam Malaysia Berhad (98127-X) | All rights reserved</p>
+    </div>
+
+</body>
+</html>
